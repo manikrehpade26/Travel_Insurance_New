@@ -1,0 +1,208 @@
+<!-- <div class="bgImg">
+    <div class="container p-4">
+        <div class="row mx-4">
+            <div class="col-8">
+                <h3 class="text-white fw-bold">Add Traveller</h3>
+            </div>
+            <div class="col-4">
+                <button class="btn pull-right" (click)="closePopup()">
+                    <mat-icon class="text-white">close_circle</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form class="form m-4 p-4" #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="name" ngModel placeholder="Name" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="phone" ngModel placeholder="Phone Number" required maxlength="10" minlength="10">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="email" class="form-control" name="email" ngModel placeholder="Email" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="date" class="form-control" name="dob" ngModel placeholder="Date of Birth" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <h3 class="text-white fw-bold">Address: </h3>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="line1" ngModel placeholder="Line 1" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="line2" ngModel placeholder="Line 2" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <input type="text" class="form-control" name="state" ngModel placeholder="State" required>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" name="district" ngModel placeholder="District" required>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" name="pincode" ngModel placeholder="Pincode" required>
+                            <input type="hidden" name="cost" value="300">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right" [disabled]="f.invalid">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+<div class="bgImg">
+
+    <div class="container p-4">
+    
+    <div class="row mx-4">
+    
+    <div class="col-8">
+    
+    <h3 class="text-white fw-bold">Add Traveller</h3>
+    
+    </div>
+    
+    <div class="col-4">
+    
+    <button class="btn pull-right" (click)="closePopup()">
+    
+    <mat-icon class="text-white">close_circle</mat-icon>
+    
+    </button>
+    
+    </div>
+    
+    </div>
+    
+    <div class="row">
+    
+    <div class="col-12">
+    
+    <form class="form m-4 p-4" #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    
+    <div class="row mb-3">
+    
+    <div class="col-6">
+    
+    <input type="text" class="form-control" name="name" [ngModel]="name.value | titlecase" placeholder="Name*" required #name="ngModel">
+    
+    <div>
+    
+    <small *ngIf="name.invalid && name.touched">Name is a required field</small>
+    
+    </div>
+    
+    </div>
+    
+    <div class="col-6">
+    
+    <input type="number" class="form-control" name="phone" ngModel placeholder="Phone Number*" required maxlength="10" minlength="10" #phone="ngModel">
+    
+    <div>
+    
+    <small *ngIf="phone.invalid && phone.touched">Phone Number is a required field</small>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <div class="row mb-3">
+    
+    <div class="col-6">
+    
+    <input type="email" class="form-control" name="email" [ngModel]="email.value | lowercase" email placeholder="Email*" required #email="ngModel">
+    
+    <div>
+    
+    <small *ngIf="email.invalid && email.touched">Email is a required field</small>
+    
+    </div>
+    
+    </div>
+    
+    <div class="col-6">
+    
+    <input type="date" class="form-control" name="dob" ngModel placeholder="Date of Birth*" required #dob="ngModel">
+    
+    <div>
+    
+    <small *ngIf="dob.invalid && dob.touched">DOB is a required field</small>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <div class="row mb-3">
+    
+    <h3 class="text-white fw-bold">Address: </h3>
+    
+    <div class="col-6">
+    
+    <input type="text" class="form-control" name="line1" ngModel placeholder="Line 1">
+    
+    </div>
+    
+    </div>
+    
+    <div class="row mb-3">
+    
+    <div class="col-6">
+    
+    <input type="text" class="form-control" name="line2" ngModel placeholder="Line 2">
+    
+    </div>
+    
+    </div>
+    
+    <div class="row mb-3">
+    
+    <div class="col-3">
+    
+    <input type="text" class="form-control" name="state" ngModel placeholder="State">
+    
+    </div>
+    
+   <div class="col-3">
+    
+    <input type="text" class="form-control" name="district" ngModel placeholder="District">
+    
+    </div>
+    
+    <div class="col-3">
+    
+    <input type="text" class="form-control" name="pincode" ngModel placeholder="Pincode">
+    
+    </div>
+    
+    </div>
+    
+    <button type="submit" class="btn btn-primary pull-right" [disabled]="f.invalid">Add</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>

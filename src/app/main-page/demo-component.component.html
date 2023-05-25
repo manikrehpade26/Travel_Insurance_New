@@ -1,0 +1,154 @@
+<div class="outerDiv">
+    <ul class="innerDiv">
+      <li class="Home url"><a href="#home" routerLink="/home">Home</a></li>
+      <li class="About url"><a href="#home" routerLink="/home">About Us</a></li>
+      <li class="Destination url"><a href="#home" routerLink="">Destination</a></li>
+      <li class="Package url"><a href="#home" routerLink="">Package</a></li>
+      <li class="Contacts url"><a href="#home" routerLink="">Contacts</a></li>
+    </ul>
+    <a href="">
+      <ul class="logo">
+        <li class="logoImg"><img src="assets/plane 1.png"></li>
+        <li class="brandName">VoyageVista</li>
+  
+      </ul>
+    </a>
+    
+    
+      
+  
+    <!-- <img src="assets/MainBackground.png"> -->
+  </div>
+  
+  <section style="margin-top: 310px; padding-left: 25px;">
+  <h3 style="font-weight: bolder;">Our Trips</h3>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div>
+        <!-- <title>GOA</title> -->
+        <div class="goa-container outerContainer">
+          <div class="goa">
+            <div class="locationName">
+              Goa
+              <div class="duration">5N/6D</div>
+            </div>
+            <div class="hotel">
+              <div><img src="assets/hotel.png" alt=""></div>
+              <div class="hotelDetails">
+                <div>1</div>
+                <div>Hotel</div>
+              </div>
+            </div>
+            <div class="flight">
+              <div><img src="assets/flight.png" alt=""></div>
+              <div class="flightDetails">
+                <div>2</div>
+                <div>Flight</div>
+              </div>
+            </div>
+            <button routerLink="/page2">Visit</button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </ng-template>  
+    <ng-template carouselSlide>
+      
+      <div>
+        <div class="kerala-container outerContainer">
+          <div class="kerala">
+            <div class="locationName">
+              Kerala
+              <div class="duration">11N/12D</div>
+            </div>
+            <div class="hotel">
+              <div><img src="assets/hotel.png" alt=""></div>
+              <div class="hotelDetails">
+                <div>4</div>
+                <div>Hotel</div>
+              </div>
+            </div>
+            <div class="flight">
+              <div><img src="assets/flight.png" alt=""></div>
+              <div class="flightDetails">
+                <div>2</div>
+                <div>Flight</div>
+              </div>
+            </div>
+            <button routerLink="/page2">Visit</button>
+          </div>
+        </div>
+        
+      </div>
+    
+    </ng-template>  
+    <ng-template carouselSlide>
+  
+      <div>
+        <div class="kasol-container outerContainer">
+          <div class="kasol">
+            <div class="locationName">
+              Kasol
+              <div class="duration">7N/8D</div>
+            </div>
+            <div class="hotel">
+              <div><img src="assets/hotel.png" alt=""></div>
+              <div class="hotelDetails">
+                <div>2</div>
+                <div>Hotel</div>
+              </div>
+            </div>
+            <div class="flight">
+              <div><img src="assets/flight.png" alt=""></div>
+              <div class="flightDetails">
+                <div>2</div>
+                <div>Flight</div>
+              </div>
+            </div>
+            <button routerLink="/page2">Visit</button>
+          </div>
+        </div>
+        
+      </div>
+  
+    </ng-template>  
+    <ng-template carouselSlide>
+  
+      <div>
+        <div class="meghalaya-container outerContainer">
+          <div class="meghalaya">
+            <div class="locationName">
+              Meghalaya
+              <div class="duration">11N/12D</div>
+            </div>
+            <div class="hotel">
+              <div><img src="assets/hotel.png" alt=""></div>
+              <div class="hotelDetails">
+                <div>3</div>
+                <div>Hotel</div>
+              </div>
+            </div>
+            <div class="flight">
+              <div><img src="assets/flight.png" alt=""></div>
+              <div class="flightDetails">
+                <div>2</div>
+                <div>Flight</div>
+              </div>
+            </div>
+            <button routerLink="/page2">Visit</button>
+          </div>
+        </div>
+        
+      </div>
+  
+    </ng-template>  
+  
+    <router-outlet></router-outlet>
+
+  </owl-carousel-o>
+  </section>
+  
+
+  
+    

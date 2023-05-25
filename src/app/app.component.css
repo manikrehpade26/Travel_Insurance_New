@@ -1,0 +1,188 @@
+body{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outerDiv{
+    position: absolute;
+    width: 100%;
+    height: 307px;
+    left: 0.21px;
+    top: -0.27px; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(src/assets/MainBackground.png);
+    display: flex;
+    flex-direction: row;
+}
+.innerDiv{
+    /* width: 30%;
+    height: 30px; */
+    list-style: none;
+    /* gap: 10px; */
+    display: grid;
+    grid-auto-flow: column;
+    /* margin-left: 65%; */
+
+    position: absolute;
+    width: 519.11px;
+    height: 33.98px;
+    left: 700.21px;
+    top: 0px;
+}
+a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2475px;
+    line-height: 20px;
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    list-style: none;
+   
+}
+.logoImg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 14.21px;
+    top: 12.73px;
+
+}
+.brandName{
+    /* list-style: none; */
+    text-align: center;
+    /* position: absolute;
+    width: 187.93px;
+    height: 46.34px;
+    left: 115px;
+    top: 45px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29.2455px;
+    line-height: 35px;
+    color: #FEF9F9; */
+
+position: absolute;
+width: 187.93px;
+height: 46.34px;
+left: 85px;
+top: 41.37px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 29.2455px;
+line-height: 35px;
+
+color: #FEF9F9;
+}
+
+.outerContainer{
+    /* background-color: blueviolet; */
+    height: 270px;
+    width: 288px;
+}
+.goa{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 40%, rgba(255, 255, 255, 0)), url(/assets/Goa.png);
+    
+}
+
+.goa, .kerala, .kasol, .meghalaya{
+    background-repeat: no-repeat;
+    height: 98%;
+    width: 100%;
+    border-radius: 18px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hotel{
+    display: flex;
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+
+.kerala{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 40%, rgba(255, 255, 255, 0)), url(/assets/kerala.png);
+    /* background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; */
+}
+
+.kasol{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 40%, rgba(255, 255, 255, 0)), url(/assets/kasol.png);
+    /* background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; */
+} 
+
+.meghalaya{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 40%, rgba(255, 255, 255, 0)), url(/assets/Meghalaya.png);
+    /* background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; */
+} 
+
+.flight{
+    display: flex;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+button{
+    margin-top: 35px;
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.locationName{
+    padding-left: 17px;
+    padding-top: 13.45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+}
+.duration{
+    padding-left: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.flightDetails, .hotelDetails{
+    padding-top: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+
+}
+
+.hotelDetails{
+    padding-left: 12px;
+}
+.flightDetails{
+    padding-left: 2px;
+}
+

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-expansion-panel {
+    border-radius: 10px !important;
+}
+.mat-expansion-panel-header {
+    background: #D0CACA !important;
+    font-weight: 700;
+    border-radius: 10px !important;
+}
+.mat-expansion-panel-header.mat-expanded {
+    height: 37px;
+}
+.mat-icon {
+    vertical-align: bottom;
+}
+.mat-expansion-panel-content {
+    font-size: 12px;
+    font-weight: 700;
+}
+.mdc-icon-button {
+    font-size: 16px !important;
+}
